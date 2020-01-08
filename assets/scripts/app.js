@@ -8,5 +8,5 @@ $(() => {
   $('#sign-out').hide()
   // $('.col-4').on('click', gameEvents.showClick)
   authEvents.addHandlers()
-  gameEvents.addHandlers()
+  // gameEvents.addHandlers()
 })

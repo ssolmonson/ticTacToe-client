@@ -31,7 +31,13 @@ const winningCombos = [
 
 const comboWin = (board) => {
   let win = ''
-  win = board[0] && board[0] === board[1] && board[0] === board[2] ? board[0] : null
+  winningCombos.forEach((combo, index) => {
+    if (board[combo[0]] && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) {
+      win = board[combo[0]]
+    }
+    // return win
+  })
+  // win = board[[0]] && board[[0]] === board[[1]] && board[[0]] === board[[2]] ? board[[0]] : null
   console.log(board)
   console.log(win)
 }
