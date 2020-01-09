@@ -97,6 +97,7 @@ const boardReset = () => {
   api.createGame()
     .then(ui.createGameSuccess)
     .catch(ui.createGameFailure)
+  // Use the indexGame to show games played for a particular token
 }
 
 // Click on a game cell

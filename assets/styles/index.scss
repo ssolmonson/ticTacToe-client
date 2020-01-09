@@ -8,6 +8,7 @@ h1 {
   color: #1a80c9;
   font-size: 100px;
   text-align: center;
+  // transform: rotate3d(0, 1, 0, 60deg);
 }
 
 .button {
@@ -37,6 +38,7 @@ h1 {
   height: 70vmin;
   margin: auto;
   width: 70vmin;
+  transform: rotate3d(1, 0, 1, 60deg);
 }
 
 // .bounce {
