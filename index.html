@@ -34,6 +34,47 @@
         </fieldset>
       </form>
 
+
+      <div class="container button">
+        <div class="row justify-content-center">
+          <div class="col-4 game-over text-center"></div>
+        </div>
+      </div>
+
+    <!-- &nbsp; blank, undisplayed symbol -->
+      <div class="container">
+        <div class="row game-board">
+          <div id="0" class="col-4 game-cell d-flex"></div>
+          <div id="1" class="col-4 game-cell d-flex"></div>
+          <div id="2" class="col-4 game-cell d-flex"></div>
+
+          <div id="3" class="col-4 game-cell d-flex"></div>
+          <div id="4" class="col-4 game-cell d-flex"></div>
+          <div id="5" class="col-4 game-cell d-flex"></div>
+
+          <div id="6" class="col-4 game-cell d-flex"></div>
+          <div id="7" class="col-4 game-cell d-flex"></div>
+          <div id="8" class="col-4 game-cell d-flex"></div>
+        </div>
+      </div>
+
+      <!-- <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+          <div class="col-6 current-player border border-dark">Player X</div>
+        </div>
+      </div> -->
+
+    <div class="container button">
+      <div class="row create-game justify-content-center text-center">
+      <form id='reset-board'>
+        <!-- <legend>Create New Board</legend> -->
+        <button type='submit' value=''>New Game</button>
+      </form>
+    </div>
+    </div>
+
+    <div class="container button">
+      <div class="row justify-content-center text-center">
       <form id='change-password'>
         <fieldset>
           <legend>Change Password</legend>
@@ -42,38 +83,17 @@
           <input type='submit' value='Change Password' />
         </fieldset>
       </form>
+    </div>
+    </div>
 
+    <div class="container button">
+      <div class="row justify-content-center text-center">
       <form id='sign-out'>
         <legend>Sign out</legend>
         <button type='button' value='Sign-out'>Sign out</button>
       </form>
-
-    <!-- &nbsp; blank, undisplayed symbol -->
-      <div class="container">
-        <div class="row">
-          <div id="0" class="col-4 game-cell text-center border-right border-bottom border-dark">&nbsp;</div>
-          <div id="1" class="col-4 game-cell text-center border-right border-bottom border-left border-dark">&nbsp;</div>
-          <div id="2" class="col-4 game-cell text-center border-left border-bottom border-dark">&nbsp;</div>
-        </div>
-
-        <div class="row">
-          <div id="3" class="col-4 game-cell text-center border-right border-bottom border-top border-dark">&nbsp;</div>
-          <div id="4" class="col-4 game-cell text-center border border-dark">&nbsp;</div>
-          <div id="5" class="col-4 game-cell text-center border-top border-bottom border-left border-dark">&nbsp;</div>
-        </div>
-
-        <div class="row">
-          <div id="6" class="col-4 game-cell text-center border-right border-top border-dark">&nbsp;</div>
-          <div id="7" class="col-4 game-cell text-center border-right border-top border-left border-dark">&nbsp;</div>
-          <div id="8" class="col-4 game-cell text-center border-top border-left border-dark">&nbsp;</div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6 current-player justify-content-center border border-dark">Player X</div>
-        </div>
-      </div>
+    </div>
+    </div>
 
       <!-- <p id='message'></p>
       <form id='sign-up'>

@@ -1,20 +1,64 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background-color: #c1e0e3;
+}
+
 h1 {
   color: #1a80c9;
   font-size: 100px;
   text-align: center;
 }
 
-.container {
-  padding-bottom: 100px;
-  padding-top: 100px;
+.button {
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
-.col-4 {
-  height: 200px;
+
+// .col-6 {
+//   height: 5% auto;
+//   margin-bottom: 50px;
+//   width: 50% auto;
+// }
+
+// .game-cell {
+//   text-align: center;
+//   height: 200px;
+//   margin: auto;
+//   width: 600px
+//   // height: 50vh;
+//   // width: 50vw;
+//   // max-height: 60vh;
+//   // max-width: h;
+// }
+
+.game-board {
+  height: 70vmin;
   margin: auto;
-  width: 600px;
+  width: 70vmin;
+}
+
+// .bounce {
+//
+// }
+
+.game-cell {
+  // animation: bounce .25s infinite;
+  align-items: center;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  font-size: 20vmin;
+  height: calc(100% / 3);
+  justify-content: center;
+}
+
+.game-cell:nth-child(3n) {
+  border-right: 0;
+}
+
+.game-cell:nth-last-child(-1n + 3) {
+  border-bottom: 0;
 }
 
 .col-6 {
@@ -22,11 +66,31 @@ h1 {
   margin-bottom: 50px;
   width: 50% auto;
 }
-
-// .row {
-//   height: 200px;
-//   margin: auto;
-//   width: 600px;
+// @keyframes bounce {
+//   0% {
+//     transform: $transtranslateY(0);
+//   }
+//   100% { transform: translateY(20px);
+//
+//   }
 // }
-// Hover over square to change color (background or opacity)
+
+// #reset-board {
+//   justify-content: center;
+// }
+//
+// #change-password {
+//   justify-content: center;
+// }
+//
+// #sign-out {
+//   justify-content: center;
+// }
+
+// .col-4 {
+//   min-height: 40%;
+//   margin: auto;
+//   min-width: 30%;
+// }
+// // Hover over square to change color (background or opacity)
 // Helps show current selected option

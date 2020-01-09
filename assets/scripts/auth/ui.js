@@ -13,6 +13,7 @@ const signInSuccess = function (response) {
   $('#sign-in').hide()
   $('#change-password').show()
   $('#sign-out').show()
+  $('.create-game').show()
   // console.log(response)
 }
 

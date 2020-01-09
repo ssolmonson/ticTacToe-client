@@ -30,25 +30,22 @@ const winningCombos = [
 // create way for game to reset in each function if win or draw is determined
 
 const comboWin = (board) => {
-  let win = ''
+  let win = false
   winningCombos.forEach((combo, index) => {
-    if (board[combo[0]] && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) {
-      win = board[combo[0]]
+    if (board[combo[0]] !== '' && board[combo[0]] === board[combo[1]] && board[combo[0]] === board[combo[2]]) {
+      win = true
     }
     // return win
   })
+  return win
   // win = board[[0]] && board[[0]] === board[[1]] && board[[0]] === board[[2]] ? board[[0]] : null
-  console.log(board)
-  console.log(win)
+  // console.log(board)
+  // console.log(win)
 }
 
 const gameDraw = (board) => {
-//  console.log(board.length)
-  if (board.includes('') === false) {
-    console.log('Game is a draw.')
-  } else {
-
-  }
+  return board.every(cell => cell !== '')
+  // console.log(draw)
   // if board array length is equal to 9
   // if (board.length === 9) {
   //   return true
