@@ -11,9 +11,15 @@ h1 {
   // transform: rotate3d(0, 1, 0, 60deg);
 }
 
-.button {
+.game-content {
   padding-bottom: 40px;
   padding-top: 40px;
+}
+
+.game-over {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6911a6;
 }
 
 
@@ -63,11 +69,11 @@ h1 {
   border-bottom: 0;
 }
 
-.col-6 {
-  height: 5% auto;
-  margin-bottom: 50px;
-  width: 50% auto;
-}
+// .col-6 {
+//   height: 5% auto;
+//   margin-bottom: 50px;
+//   width: 50% auto;
+// }
 // @keyframes bounce {
 //   0% {
 //     transform: $transtranslateY(0);

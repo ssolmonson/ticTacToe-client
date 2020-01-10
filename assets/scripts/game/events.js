@@ -38,9 +38,9 @@ const selectBox = (event) => {
       // // then change player based on which player just placed a symbol
       turn = (turn === 'X') ? 'O' : 'X'
       $('div.game-over').text('Player ' + turn)
-      // api.updateGame()
-      //   .then(ui.updateGameSuccess)
-      //   .catch(ui.updateGameFailure)
+      api.updateGame()
+        .then(ui.updateGameSuccess)
+        .catch(ui.updateGameFailure)
       // comboWin will be executed first to determine if game is a winner and to be reset
       // the gameDraw will excute  to determine if a draw and to be reset
       // if neither comboWin or gameDraw determine an end play will continue
@@ -51,14 +51,14 @@ const selectBox = (event) => {
         turn = (turn === 'X') ? 'O' : 'X'
         $('div.game-over').text('Player ' + turn + ' wins!')
         gameOver = true
-        // api.updateGame()
-        //   .then(ui.updateGameSuccess)
-        //   .catch(ui.updateGameFailure)
+        api.updateGame()
+          .then(ui.updateGameSuccess)
+          .catch(ui.updateGameFailure)
       } else if (checkWin.gameDraw(board)) {
         $('div.game-over').text('Game is a draw.')
-        // api.updateGame()
-        //   .then(ui.updateGameSuccess)
-        //   .catch(ui.updateGameFailure)
+        api.updateGame()
+          .then(ui.updateGameSuccess)
+          .catch(ui.updateGameFailure)
         gameOver = true
       } else {
       }
@@ -66,9 +66,9 @@ const selectBox = (event) => {
       // then change player based on which player just placed a symbol
       // turn = (turn === 'X') ? 'O' : 'X'
       // $('div.game-over').text('Player ' + turn)
-      api.updateGame()
-        .then(ui.updateGameSuccess)
-        .catch(ui.updateGameFailure)
+      // api.updateGame()
+      //   .then(ui.updateGameSuccess)
+      //   .catch(ui.updateGameFailure)
     }
     // console.log(id)
     // console.log(id.text())}
@@ -94,16 +94,27 @@ const boardReset = () => {
   $('.game-board').show()
   $('.game-cell').show()
   $('#message').text('')
+  $('.games-played').show()
   api.createGame()
     .then(ui.createGameSuccess)
     .catch(ui.createGameFailure)
   // Use the indexGame to show games played for a particular token
 }
 
+const showGames = () => {
+  event.preventDefault()
+  api.indexGame()
+    .then(ui.indexGameSuccess)
+    .catch(ui.indexGameFailure)
+  console.log('hello')
+}
+
 // Click on a game cell
 $('.game-cell').on('click', selectBox)
 // Reset game board to default values
 $('#reset-board').on('submit', boardReset)
+// Click button to display games
+$('#played').on('click', showGames)
 
 // const addHandlers = () => {
 //   // Reset game board to default values

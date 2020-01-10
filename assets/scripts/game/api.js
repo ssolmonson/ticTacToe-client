@@ -17,7 +17,7 @@ const createGame = function () {
 
 const indexGame = function () {
   return $.ajax({
-    url: config.apiUrl + '/games', // ?over=
+    url: config.apiUrl + '/games', // ?over=true',
     method: 'GET',
     headers: {
       Authorization: 'Token token=' + store.user.token

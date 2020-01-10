@@ -8,6 +8,7 @@ $(() => {
   $('#sign-out').hide()
   $('.game-board').hide()
   $('.create-game').hide()
+  $('.games-played').hide()
   // $('.col-4').on('click', gameEvents.showClick)
   authEvents.addHandlers()
   // gameEvents.addHandlers()
