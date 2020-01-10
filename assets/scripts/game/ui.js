@@ -23,7 +23,7 @@ const updateGameFailure = () => {
 const indexGameSuccess = (response) => {
   // console.log(response.games.length) // game).length)
   // store.game = games.game
-  $('.games-played').text(response.games.length)
+  $('#games').text(response.games.length)
 }
 
 const indexGameFailure = () => {
