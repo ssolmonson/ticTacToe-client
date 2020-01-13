@@ -23,23 +23,6 @@ h1 {
 }
 
 
-// .col-6 {
-//   height: 5% auto;
-//   margin-bottom: 50px;
-//   width: 50% auto;
-// }
-
-// .game-cell {
-//   text-align: center;
-//   height: 200px;
-//   margin: auto;
-//   width: 600px
-//   // height: 50vh;
-//   // width: 50vw;
-//   // max-height: 60vh;
-//   // max-width: h;
-// }
-
 .game-board {
   height: 70vmin;
   margin: auto;
@@ -68,6 +51,23 @@ h1 {
 .game-cell:nth-last-child(-1n + 3) {
   border-bottom: 0;
 }
+
+// .col-6 {
+//   height: 5% auto;
+//   margin-bottom: 50px;
+//   width: 50% auto;
+// }
+
+// .game-cell {
+//   text-align: center;
+//   height: 200px;
+//   margin: auto;
+//   width: 600px
+//   // height: 50vh;
+//   // width: 50vw;
+//   // max-height: 60vh;
+//   // max-width: h;
+// }
 
 // .col-6 {
 //   height: 5% auto;

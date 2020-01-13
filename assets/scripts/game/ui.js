@@ -13,7 +13,7 @@ const createGameFailure = () => {
 
 const updateGameSuccess = (data) => {
   store.game = data.game
-  // console.log('Updated a game!')
+  console.log(data)
 }
 
 const updateGameFailure = () => {
@@ -21,13 +21,12 @@ const updateGameFailure = () => {
 }
 
 const indexGameSuccess = (response) => {
-  // console.log(response.games.length) // game).length)
-  // store.game = games.game
+  // console.log(response) // game).length)
   $('#games').text(response.games.length)
 }
 
 const indexGameFailure = () => {
-  // console.log('Failed to getgame.')
+  // console.log('Failed to get game.')
 }
 
 module.exports = {

@@ -28,6 +28,11 @@ const signOutSuccess = function (response) {
   $('#sign-in').show()
   $('#change-password').hide()
   $('#sign-out').hide()
+  $('.game-board').hide()
+  $('.create-game').hide()
+  $('.games-played').hide()
+  $('div.game-over').text('')
+  $('#message').delay(1500).hide('Sign out complete!')
   // console.log(response)
 }
 

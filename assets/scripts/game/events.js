@@ -18,7 +18,7 @@ let turn = 'X'
 // const apiUpdate = api.updateGame()
 
 const selectBox = (event) => {
-// IF GAMEOVER IS TRUE DO THE STUFF, OTHERWISE, MAKE A MESSAGE
+// If gameover is true don't allow the rest of the click event to continue
   if (gameOver === true) {
     // do nothing
   } else {
@@ -62,10 +62,6 @@ const selectBox = (event) => {
         gameOver = true
       } else {
       }
-      // $('div.game-over').text('Player ' + turn)
-      // then change player based on which player just placed a symbol
-      // turn = (turn === 'X') ? 'O' : 'X'
-      // $('div.game-over').text('Player ' + turn)
       // api.updateGame()
       //   .then(ui.updateGameSuccess)
       //   .catch(ui.updateGameFailure)
@@ -76,8 +72,6 @@ const selectBox = (event) => {
   // Test reset board
   // console.log(board)
 }
-// Click on a game cell
-// $('.game-cell').on('click', selectBox)
 
 // Reset game board to default values
 // const boardReset = () => {
@@ -116,13 +110,6 @@ $('#reset-board').on('submit', boardReset)
 // Click button to display games
 $('#played').on('click', showGames)
 
-// const addHandlers = () => {
-//   // Reset game board to default values
-//   $('#reset-board').on('submit', boardReset)
-//   // Click on a game cell
-//   $('.game-cell').on('click', selectBox)
-// }
-
 module.exports = {
   selectBox,
   checkWin,
@@ -131,6 +118,18 @@ module.exports = {
 }
 
 // OLD CODE
+
+// const addHandlers = () => {
+//   // Reset game board to default values
+//   $('#reset-board').on('submit', boardReset)
+//   // Click on a game cell
+//   $('.game-cell').on('click', selectBox)
+// }
+
+// $('div.game-over').text('Player ' + turn)
+// then change player based on which player just placed a symbol
+// turn = (turn === 'X') ? 'O' : 'X'
+// $('div.game-over').text('Player ' + turn)
 
 // after each click run a function to check for a winner or a draw
 // checkWin.comboWin()
