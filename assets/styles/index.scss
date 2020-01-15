@@ -37,11 +37,15 @@ h1 {
 .game-cell {
   // animation: bounce .25s infinite;
   align-items: center;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
+  color: #15689d;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  // color: #085c81;
   font-size: 20vmin;
   height: calc(100% / 3);
   justify-content: center;
+  text-shadow: 7px 5px 10px black;
+  // box-shadow: 2px 2px 2px black;
 }
 
 .game-cell:nth-child(3n) {
@@ -50,6 +54,12 @@ h1 {
 
 .game-cell:nth-last-child(-1n + 3) {
   border-bottom: 0;
+}
+
+#games {
+  font-size: 24px;
+  font-weight: 700;
+  color: #7d0678;
 }
 
 // .col-6 {

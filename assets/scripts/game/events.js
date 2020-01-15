@@ -100,7 +100,7 @@ const showGames = () => {
   api.indexGame()
     .then(ui.indexGameSuccess)
     .catch(ui.indexGameFailure)
-  console.log('hello')
+  // console.log('Show')
 }
 
 // Click on a game cell
