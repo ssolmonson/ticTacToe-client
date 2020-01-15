@@ -29,7 +29,7 @@ I plan to tackle small problems while still having a larger goal in mind. Once I
 Keeping multiple files and linking them to each other to keep a clean code.
 
 ### Wireframe:
-![wireframe](https://imgur.com/bZste4M)
+![wireframe](https://imgur.com/bZste4M.jpg)
 
 #### Creative Spin?:
 - Using different symbols for 'X' and 'O'
