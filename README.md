@@ -1,19 +1,19 @@
-Game Project Scope:
+# Game Project Scope:
 
 
-Wireframe:
-https://imgur.com/bZste4M
+
+## Gameboard JS + HTML representation:
+
+An array called board of the gameboard coordinates (0 through 8,) will be the basis. An on click command, only allowed once per square to change the square to the given player symbol (at start just a 'X' or 'O', eventually plan to modify to unique symbols).
 
 
-Gameboard JS + HTML representation:
-- An array called board of the gameboard coordinates (0 through 8,) will be the basis. An on click command, only allowed once per square to change the square to the given player symbol (at start just a 'X' or 'O', eventually plan to modify to unique symbols).
+## Approach Plan:
+
+I plan to tackle small problems while still having a larger goal in mind. Once I have a bit of framework set, goals for each day will be set. I like to think about projects like a building. Starting with framework and scaffolding(Pseudo code, basic starter design), then adding walls (JS), then finishing the inside (cleaning up JS), and finally designing the outside (CSS)
 
 
-Approach Plan:
-- I plan to tackle small problems while still having a larger goal in mind. Once I have a bit of framework set, goals for each day will be set. I like to think about projects like a building. Starting with framework and scaffolding(Pseudo code, basic starter design), then adding walls (JS), then finishing the inside (cleaning up JS), and finally designing the outside (CSS)
+### User Stories:
 
-
-User Stories:
 - As a user I want to sign up with an email address so I can have a login.
 - As a user I want to be able to sign-out so I know my account won't be accessed by someone else.
 - As a user I want to be able to change my password, so I can ensure my account is secure.
@@ -24,10 +24,14 @@ User Stories:
 - As a user I want to see what symbol is current in play so the right player can make a move.
 
 
-Plan to keep code modular:
-- Keeping multiple files and linking them to each other to keep a clean code.
+### Plan to keep code modular:
 
-Creative Spin?:
+Keeping multiple files and linking them to each other to keep a clean code.
+
+### Wireframe:
+![wireframe](https://imgur.com/bZste4M)
+
+#### Creative Spin?:
 - Using different symbols for 'X' and 'O'
 - Sign in/Sign up in a Navbar
 - Fade gameboard for sign in
