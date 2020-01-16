@@ -4,12 +4,12 @@
 
 ## Gameboard JS + HTML representation:
 
-An array called board of the gameboard coordinates (0 through 8,) will be the basis. An on click command, only allowed once per square to change the square to the given player symbol (at start just a 'X' or 'O', eventually plan to modify to unique symbols).
+The board went through a few different iterations (both `new Array(9)` and an empty array were used) while working with the game logic design. Ultimately an array with nine empty strings seemed to work best with my thought process. In HTML this was referenced by Bootstrap columns using a class of game-cell. An on click command was used with the game-cell class to be able to claim that spot for a standard 'X' or 'O', depending on which turn it isaccording to the game logic .
 
 
 ## Approach Plan:
 
-I plan to tackle small problems while still having a larger goal in mind. Once I have a bit of framework set, goals for each day will be set. I like to think about projects like a building. Starting with framework and scaffolding(Pseudo code, basic starter design), then adding walls (JS), then finishing the inside (cleaning up JS), and finally designing the outside (CSS)
+The plan is to tackle small problems while still having a larger goals set. Once there is a bit of framework, goals for each day will be set. Software development has a similar timeline to that of a new building. Starting with framework and scaffolding(Pseudo code, basic starter design), then adding walls (JS), then finishing the inside (cleaning up JS), and finally designing the outside (CSS)
 
 
 ### User Stories:
@@ -24,20 +24,41 @@ I plan to tackle small problems while still having a larger goal in mind. Once I
 - As a user I want to see what symbol is current in play so the right player can make a move.
 
 
-### Plan to keep code modular:
+### Technologies Used
 
-Keeping multiple files and linking them to each other to keep a clean code.
+- HTML/CSS
+- JavaScript
+- jQuery
+- Bootstrap
+- Sass
+- AJAX
 
-### Wireframe:
-![wireframe](https://imgur.com/bZste4M.jpg)
 
-#### Creative Spin?:
+### Plan to keep code modular
+
+Modular code is the key to designing an easy to read and debug application. Multiple files will be used as much as possible, in order to give and easy way to develop, complete, and test.
+
+### Future Changes
+
 - Using different symbols for 'X' and 'O'
 - Sign in/Sign up in a Navbar
 - Fade gameboard for sign in
 - Symbol selection (multiple pairs of symbols to use)
 - Win/Loss counter
-- Show an image of what symbol is up
+
+
+## Images
+
+### Wireframe:
+![wireframe](https://imgur.com/bZste4M.jpg)
+
+
+#### References
+
+[Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+[jQuery](https://api.jquery.com/)
+[JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 
 <!-- ## Structure
 
