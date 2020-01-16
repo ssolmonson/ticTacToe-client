@@ -46,6 +46,7 @@ const signOutSuccess = function (response) {
 }
 
 const signUpFailure = function () {
+  $('#message').show('')
   $('input[type=email]').val('')
   $('input[type=password]').val('')
   $('#message').text('Sign up failed!')
@@ -54,9 +55,11 @@ const signUpFailure = function () {
 }
 
 const signInFailure = function () {
-  $('#message').text('Sign in failed!')
+  $('#message').show('')
   $('input[type=email]').val('')
   $('input[type=password]').val('')
+  $('#message').text('Sign in failed!')
+  $('#message').delay(1500).hide('Sign in failed!')
   // console.log(error)
 }
 
