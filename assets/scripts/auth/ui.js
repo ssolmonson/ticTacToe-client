@@ -5,6 +5,7 @@ const signUpSuccess = function (response) {
   $('input[type=email]').val('')
   $('input[type=password]').val('')
   $('#message').text('Successfully signed up!')
+  $('#message').delay(1500).hide('Successfully signed up!')
   // console.log(response)
 }
 
@@ -23,8 +24,10 @@ const signInSuccess = function (response) {
 }
 
 const changeSuccess = function (response) {
-  $('#message').text('Password changed successfully!')
+  $('#message').show('')
   $('input[type=password]').val('')
+  $('#message').text('Password changed successfully!')
+  $('#message').delay(1500).hide('Password changed successfully!')
   // console.log(response)
 }
 
@@ -43,9 +46,10 @@ const signOutSuccess = function (response) {
 }
 
 const signUpFailure = function () {
-  $('#message').text('Sign up failed!')
   $('input[type=email]').val('')
   $('input[type=password]').val('')
+  $('#message').text('Sign up failed!')
+  $('#message').delay(1500).hide('Sign up failed!')
   // console.log(error)
 }
 
@@ -57,8 +61,9 @@ const signInFailure = function () {
 }
 
 const changeFailure = function () {
-  $('#message').text('Failed to change password.')
+  $('#message').show('')
   $('input[type=password]').val('')
+  $('#message').text('Failed to change password.')
   // console.log(error)
 }
 
